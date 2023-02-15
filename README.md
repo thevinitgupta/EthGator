@@ -1,4 +1,4 @@
-# ETH Daddy 
+# ETH Gator 
 
 ## Technology Stack & Tools
 
