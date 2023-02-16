@@ -14,12 +14,23 @@ import config from './config.json';
 
 function App() {
 
+  const loadBlockchainData = async () => {
+    const accounts = await window.ethereum.request({'method' : 'eth_requestAccounts'});
+    // const account = ethers.utils.getAddress(accounts[0])
+    console.log(accounts[0]);
+  }
+
+  useEffect(() => {
+    loadBlockchainData();
+  }, [])
+  
+
   return (
     <div>
 
       <div className='cards__section'>
 
-        <h2 className='cards__title'>Welcome to ETH Daddy</h2>
+        <h2 className='cards__title'>Welcome to ETH Gator</h2>
 
       </div>
 
